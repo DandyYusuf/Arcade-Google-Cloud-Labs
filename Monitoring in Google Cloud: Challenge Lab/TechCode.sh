@@ -63,7 +63,7 @@ echo
 
 # Section 3: Uptime Check
 echo "${YELLOW_TEXT}Creating uptime check for the instance...${RESET_FORMAT}"
-gcloud monitoring uptime create arcadecrew \
+gcloud monitoring uptime create apache-vm \
   --resource-type="gce-instance" \
   --resource-labels=project_id=$DEVSHELL_PROJECT_ID,instance_id=$INSTANCE_ID,zone=$ZONE
 echo "${GREEN_TEXT}Uptime check created successfully!${RESET_FORMAT}"
